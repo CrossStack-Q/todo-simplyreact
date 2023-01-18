@@ -38,9 +38,10 @@ function App() {
           <p className='title'>
             My To Do List
           </p>
-          <form onSubmit={handleSubmit}>
+          <form
+            onSubmit={handleSubmit}>
             <input
-            className='inout'
+              className='inout'
               type="text"
               placeholder="Title..."
               value={newTodo}
@@ -63,8 +64,8 @@ function App() {
                 {todo.task}
               </span>
               <span style={{
-                fontSize:"24px",
-                cursor:"pointer",
+                fontSize: "24px",
+                cursor: "pointer",
               }} onClick={() => handleDelete(index)}>&times;</span>
             </li>
           ))}

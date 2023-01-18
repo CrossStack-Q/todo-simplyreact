@@ -14,12 +14,14 @@
   font-weight: 700;
   margin: 0;
   padding: 2px;
+  margin-bottom: 10px;
 }
 
 .headr{
   background-color: rgb(40, 113, 240);
+  border: transparent;
+  border-radius: 16px;
   padding: 20px;
-  width: 40vw;
 }
 
 .inout{
@@ -39,7 +41,6 @@
 }
 
 .todolist{
-  width: 42vw;
   padding: 0;
 }
 
@@ -59,4 +60,9 @@ ul li:hover{
 
 ul li:nth-child(odd) {
   background: gainsboro;
+}
+
+.formg{
+  margin: 20px;
+  background-color: red !important;
 }
