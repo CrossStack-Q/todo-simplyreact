@@ -39,25 +39,36 @@ function App() {
             My To Do List
           </p>
           <form
+            style={{
+              display:"flex"
+            }}
             onSubmit={handleSubmit}>
             <input
               className='inout'
+              style={{
+                flex:"0.8"
+              }}
               type="text"
               placeholder="Title..."
               value={newTodo}
               onChange={handleChange}
             />
-            <button className='buttonsubmit' type="submit">Add</button>
+            <button style={{
+              flex:"0.2",
+            }} className='buttonsubmit' type="submit">Add</button>
           </form>
         </div>
 
         <ul className='todolist'>
           {todos.map((todo, index) => (
-            <li key={index} className="todoitem">
+            <li key={index} style={{
+              backgroundColor: todo.completed ? "gray" : "",
+            }} className="todoitem">
               <span
                 style={{
                   textDecoration: todo.completed ? "line-through" : "",
                   fontSize: "24px",
+                  cursor:"pointer"
                 }}
                 onClick={() => handleCompleted(index)}
               >
@@ -65,7 +76,7 @@ function App() {
               </span>
               <span style={{
                 fontSize: "24px",
-                cursor: "pointer",
+                cursor: "pointer"
               }} onClick={() => handleDelete(index)}>&times;</span>
             </li>
           ))}

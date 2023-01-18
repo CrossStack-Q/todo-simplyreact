@@ -1,10 +1,6 @@
 .main {
   width: 100vw;
   height: 100vh;
-  align-items: center;
-  justify-content: center;
-  background-color: #6b93f76e;
-  display: flex;
 }
 
 .title{
@@ -18,9 +14,7 @@
 }
 
 .headr{
-  background-color: rgb(40, 113, 240);
-  border: transparent;
-  border-radius: 16px;
+  background-color: red;
   padding: 20px;
 }
 
@@ -32,8 +26,6 @@
 }
 
 .buttonsubmit{
-  background-color: #84a5f7;
-  color: white;
   border: none;
   font-size: 16px;
   font-weight: 500;
@@ -41,7 +33,10 @@
 }
 
 .todolist{
-  padding: 0;
+  width: 100%;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
 }
 
 ul li:hover{
@@ -51,18 +46,26 @@ ul li:hover{
 
 .todoitem{
   font-size: 16px;
-  padding: 8px;
-  width: 100%;
   list-style: none;
   display: flex;
   justify-content: space-between;
+  margin-right: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 ul li:nth-child(odd) {
-  background: gainsboro;
+  background: rgba(193, 193, 193, 0.202);
 }
 
 .formg{
   margin: 20px;
   background-color: red !important;
+}
+
+.inout:focus{
+  outline: none;
 }
