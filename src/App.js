@@ -68,7 +68,7 @@ function App() {
                 style={{
                   textDecoration: todo.completed ? "line-through" : "",
                   fontSize: "24px",
-                  cursor:"pointer"
+                  cursor:"pointer",
                 }}
                 onClick={() => handleCompleted(index)}
               >
@@ -76,7 +76,7 @@ function App() {
               </span>
               <span style={{
                 fontSize: "24px",
-                cursor: "pointer"
+                cursor: "pointer",
               }} onClick={() => handleDelete(index)}>&times;</span>
             </li>
           ))}
